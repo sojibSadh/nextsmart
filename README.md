@@ -2,17 +2,17 @@
 # Developer
 - 👨‍💻 Developed by: Sajib Ahmeed
 - 🌐 Project: SuperTalent
-- 🌸 programming-hero: 12 batch
+- 🌸 programming-hero: 12 batch -Ejp
 
 
 
-**SuperTalent** is a modern, responsive **Job Marketplace Platform** built with React, Tailwind CSS, and Firebase Authentication.
+**nextTalent** is a modern, responsive built with React, Tailwind CSS, and Firebase Authentication.
 It connects talented professionals with employers by allowing users to **post, browse, and accept job
 
 
 #  Live Preview 🌸
-- Client-netlify:   https://super-talent-client.netlify.app
-- Client-netlify:   https://supertalent.netlify.app
+- Client-vercel:   https://nextsmart1.vercel.app
+
 - 
 - Server-vercel:  https://super-server-mu.vercel.app
 - Server-onrender:  https://super-server-3.onrender.com
@@ -21,7 +21,7 @@ It connects talented professionals with employers by allowing users to **post, b
 
 
 # Clone Repository
-git clone  https://github.com/sojibSadh/supertalent-client.git
+git clone  https://github.com/sojibSadh/nextsmart.git
 
 
 
