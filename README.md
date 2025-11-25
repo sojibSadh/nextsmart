@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Developer
+- 👨‍💻 Developed by: Sajib Ahmeed
+- 🌐 Project: SuperTalent
+- 🌸 programming-hero: 12 batch
+
+
+
+**SuperTalent** is a modern, responsive **Job Marketplace Platform** built with React, Tailwind CSS, and Firebase Authentication.
+It connects talented professionals with employers by allowing users to **post, browse, and accept job
+
+
+#  Live Preview 🌸
+- Client-netlify:   https://super-talent-client.netlify.app
+- Client-netlify:   https://supertalent.netlify.app
+- 
+- Server-vercel:  https://super-server-mu.vercel.app
+- Server-onrender:  https://super-server-3.onrender.com
+
+
+
+
+# Clone Repository
+git clone  https://github.com/sojibSadh/supertalent-client.git
+
+
+
+
+##  Project Purpose
+
+SuperTalent is designed to create a bridge between **Job Providers** and **Job Seekers**.
+It allows users to:
+
+- Post new job opportunities.
+- Browse available jobs.
+- Apply for jobs they’re interested in.
+- Manage their own added and accepted jobs from a secure dashboard.
+
+The goal is to make job searching and hiring fast, easy, and trustworthy.
+
+
+
+
+
+# Apps Features
+**Modern UI/UX:**
+Built with Tailwind CSS and DaisyUI for a professional, fully responsive design.
+
+ **Job Management:**
+- Add new jobs
+- View all jobs
+- Update or delete your own job posts
+
+**Job Application System:**
+- View detailed job information
+- Apply to jobs (cannot apply to your own jobs)
+
+**My Accepted Tasks Page:**
+- Displays all the jobs a user has accepted
+- Manage tasks with ✅ **DONE** and ❌ **CANCEL** buttons
+
+**Dynamic & Secure Routing:**
+Uses `react-router` for navigation and private routes for authentication-protected pages.
+
+**Firebase Authentication:**
+Sign up, log in, and log out using Firebase Auth.
+
+**Real-time Notifications:**
+Toast messages via `react-hot-toast` & `react-toastify` for smooth UX.
+
+**Modern Animations:**
+Interactive animations using **Framer Motion** and **Lucide React** icons.
+
+**Sweet Alerts:**
+Confirmation alerts for deleting or updating jobs using `SweetAlert2`.
+
+
+
+
+
+## 🔐 Protected Routes
+Some routes require the user to be **logged in** before access:
+
+| Route | Description | Access |
+|-------|--------------|--------|
+| `/addJob` | Add new job | 🔒 Protected |
+| `/updateJob/:id` | Update job details | 🔒 Protected |
+| `/deleteJob/:id` | Delete a job post | 🔒 Protected |
+| `/myAddedJobs` | View all jobs created by the logged-in user | 🔒 Protected |
+| `/my-accepted-tasks` | View and manage all accepted jobs | 🔒 Protected |
+
+Public routes such as `/`, `/allJobs`, and `/login/register` are open to all users.
+
+
+
+## 👤 My Profile Page
+
+Each logged-in user gets a personalized **Profile Page** where they can:
+- View and update their personal information
+- Manage their added and accepted jobs
+- Log out from the system
+Profile updates trigger toast notifications and instant UI refresh.
+
+
+
+# Additional Features
+- Fully Responsive (Mobile, Tablet, Desktop)
+- Minimalist UI with Tailwind CSS + DaisyUI
+- Toast notifications for success/error messages
+- Dedicated Error Page for invalid routes
+- Navbar & Footer remain visible on all routes
+
+
+## 🛠️ Tech Stack
+
+**Frontend:** React, Tailwind CSS, DaisyUI
+**Backend/API:** Node.js / Express / MongoBD
+**Auth:** Firebase and  Firebase SDK Auth
+**HTTP Client:** Axios
+**Animation & UX:** Framer Motion, Lucide React, SweetAlert2
+**Notifications:** React Hot Toast, Toastify
+
+
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies
+   ```bash
+   npm install
+   ```stall
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. Start dev server
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+3. Build
+   ```bash
+   npm run build
+   ```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```json
+{
+  "@tailwindcss/vite": "^4.1.17",
+  "axios": "^1.13.2",
+  "daisyui": "^5.4.5",
+  "firebase": "^12.5.0",
+  "framer-motion": "^12.23.24",
+  "lucide-react": "^0.552.0",
+  "react": "^19.2.0",
+  "react-dom": "^19.2.0",
+  "react-hot-toast": "^2.6.0",
+  "react-icons": "^5.5.0",
+  "react-loader-spinner": "^8.0.0",
+  "react-router": "^7.9.5",
+  "react-toastify": "^11.0.5",
+  "sweetalert2": "^11.26.3",
+  "tailwindcss": "^4.1.17",
+  "toastify-js": "^1.12.0"
+}
+   ```
